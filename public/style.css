@@ -1,0 +1,87 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	margin: 15px;
+}
+
+h1, h2 {
+	font-size: 4.236rem;
+}
+
+h3 {
+	font-size: 2.618rem;
+}
+
+p {
+	font-size: 1.618rem;
+}
+
+/*6.854rem
+4.236rem
+2.618rem
+1.618rem
+1rem
+0.618rem
+0.382rem
+0.236rem*/
+
+ul {
+	list-style: none;
+	text-align: center;
+}
+
+ul li {
+	display: inline;
+}
+
+ul > li > a > i.icon {
+	color: black;
+	font-size: 3rem;
+}
+
+.facebook.icon {
+	color: #3b5998;
+}
+
+.linkedin.square.icon {
+	color: #0077b5;
+}
+
+.medium.icon {
+	color: #00ab6c;
+}
+
+.buttons {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	margin: 15px auto;
+}
+
+img {
+	margin: 10px auto;
+}
+
+@media only screen and (min-width: 600px) {
+	html {
+		font-size: 11px;
+	}
+	body {
+		margin: 30px;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	html {
+		font-size: 12px;
+	}
+	body {
+		margin: 50px;
+	}
+
+}
+
