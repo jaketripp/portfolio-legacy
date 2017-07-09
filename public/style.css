@@ -8,11 +8,11 @@ body {
 	margin: 15px;
 }
 
-h1, h2 {
+h1 {
 	font-size: 4.236rem;
 }
 
-h3 {
+h2, h3 {
 	font-size: 2.618rem;
 }
 
@@ -29,19 +29,20 @@ p {
 0.382rem
 0.236rem*/
 
-ul {
-	list-style: none;
+#bio {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+#bio img {
+	border-radius: .3125em;
+	width: 100%;
+	height: auto;
+}
+
+#contact {
 	text-align: center;
-	padding-left: 0;
-}
-
-ul li {
-	display: inline;
-}
-
-ul > li > a > i.icon {
-	color: black;
-	font-size: 3rem;
+	margin: 15px;
 }
 
 .ui.cards {
@@ -50,19 +51,63 @@ ul > li > a > i.icon {
 }
 
 .ui.cards>.card {
-	width: 330px;
+	flex-grow: 1.0;
 }
 
-.facebook.icon {
-	color: #3b5998;
+.ui.divider {
+	margin: 0 auto;
+}
+.fa {
+    padding: 1.0rem;
+    font-size: 2.0rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 10px 5px;
 }
 
-.linkedin.square.icon {
-	color: #0077b5;
+.fa-facebook {
+    color: #3B5998;
+    background: #fff;
+    border: 2px solid #3B5998;
 }
 
-.medium.icon {
-	color: #00ab6c;
+.fa-facebook:hover {
+    background: #3B5998;
+    color: #fff;
+}
+
+.fa-linkedin {
+    color: #0077b5;
+    background: #fff;
+    border: 2px solid #0077b5;
+}
+
+.fa-linkedin:hover {
+    background: #0077b5;
+    color: #fff;
+}
+
+.fa-medium {
+    color: #00ab6c;
+    background: #fff;
+    border: 2px solid #00ab6c;
+}
+
+.fa-medium:hover {
+    background: #00ab6c;
+    color: #fff;
+}
+
+.fa-github {
+    color: #000;
+    background: #fff;
+    border: 2px solid #000;
+}
+
+.fa-github:hover {
+    background: #000;
+    color: #fff;
 }
 
 .buttons {
@@ -90,6 +135,22 @@ footer {
 	body {
 		margin: 50px;
 	}
+	#bio {
+		flex-direction: row;
+		justify-content: center;
+		align-items: start;
+	}
+	#bio > * {
+		flex: 0 0 50%;
+	}
+	#bio img {
+		width: 50%;
+	}
+	#bio #words {
+		width: 50%;
+		padding-right: 20px;
+	}
+
 
 }
 
