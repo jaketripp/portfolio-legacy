@@ -38,6 +38,8 @@ p {
 	border-radius: .3125em;
 	width: 100%;
 	height: auto;
+	box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	margin-bottom: 20px;
 }
 
 #contact {
@@ -140,14 +142,14 @@ footer {
 		justify-content: center;
 		align-items: start;
 	}
-	#bio > * {
+	/*#bio > * {
 		flex: 0 0 50%;
-	}
+	}*/
 	#bio img {
-		width: 50%;
+		width: 40%;
 	}
 	#bio #words {
-		width: 50%;
+		width: 60%;
 		padding-right: 20px;
 	}
 
