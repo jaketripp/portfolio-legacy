@@ -1,3 +1,5 @@
+/*	background: #ecf0f1; */
+
 html {
 	font-size: 10px;
 }
@@ -42,6 +44,15 @@ ul > li > a > i.icon {
 	font-size: 3rem;
 }
 
+.ui.cards {
+	justify-content: center;
+	margin: 20px auto;
+}
+
+.ui.cards>.card {
+	width: 330px;
+}
+
 .facebook.icon {
 	color: #3b5998;
 }
@@ -61,10 +72,6 @@ ul > li > a > i.icon {
 footer {
 	text-align: center;
 	margin: 15px auto;
-}
-
-img {
-	margin: 10px auto;
 }
 
 @media only screen and (min-width: 600px) {
