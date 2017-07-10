@@ -78,7 +78,11 @@ p {
 	max-width: 500px;
 }
 
-.section {
+.ui.cards>.card .button {
+	margin: 5px;
+}
+
+.contactHalf {
 	display: block;
 }
 
@@ -157,12 +161,6 @@ p {
     color: #fff;
 }
 
-.buttons {
-	text-align: center;
-	margin-bottom: 25px;
-}
-
-
 footer {
 	text-align: center;
 	margin: 0px auto;
@@ -179,7 +177,7 @@ footer {
 	.ui.container {
 		margin-top: 20px;
 	}
-	.section {
+	.contactHalf {
 		display: inline;
 	}
 }
