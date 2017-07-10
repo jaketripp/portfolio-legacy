@@ -5,8 +5,12 @@ html {
 }
 
 body {
-	margin: 15px;
+	color: #181830;
 }
+
+/*body {
+	margin: 15px;
+}*/
 
 h1 {
 	font-size: 4.236rem;
@@ -29,14 +33,31 @@ p {
 0.382rem
 0.236rem*/
 
+/*#5DBCD2*/
+
+/*
+#f0c060	0.565067
+#c09048	0.139067
+#181830	0.115911
+#ffc060	0.049644
+#a87848	0.042089
+
+*/
+
+.ui.container {
+	margin-top: 15px;
+}
+
 #bio {
 	display: flex;
 	flex-direction: column-reverse;
+	align-items: center;
 }
 
 #bio img {
 	border-radius: .3125em;
 	width: 100%;
+	max-width: 500px;
 	height: auto;
 	box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	margin-bottom: 20px;
@@ -54,11 +75,13 @@ p {
 
 .ui.cards>.card {
 	flex-grow: 1.0;
+	max-width: 500px;
 }
 
-.ui.divider {
-	margin: 0 auto;
+.section {
+	display: block;
 }
+
 .fa {
     padding: 1.0rem;
     font-size: 2.0rem;
@@ -112,21 +135,52 @@ p {
     color: #fff;
 }
 
+.fa-envelope {
+    color: #ffc060;
+    background: #fff;
+    border: 2px solid #ffc060;
+}
+
+.fa-envelope:hover {
+    background: #ffc060;
+    color: #fff;
+}
+
+.fa-file-text {
+    color: #a87848;
+    background: #fff;
+    border: 2px solid #a87848;
+}
+
+.fa-file-text:hover {
+    background: #a87848;
+    color: #fff;
+}
+
 .buttons {
 	text-align: center;
+	margin-bottom: 25px;
 }
+
 
 footer {
 	text-align: center;
-	margin: 15px auto;
+	margin: 0px auto;
+	padding: 10px 0;
+	width: 100%;
+	background: #f0c060;
+	color: black;
 }
 
 @media only screen and (min-width: 600px) {
 	html {
 		font-size: 11px;
 	}
-	body {
-		margin: 30px;
+	.ui.container {
+		margin-top: 20px;
+	}
+	.section {
+		display: inline;
 	}
 }
 
@@ -134,9 +188,9 @@ footer {
 	html {
 		font-size: 12px;
 	}
-	body {
-		margin: 50px;
-	}
+	.ui.container {
+		margin-top: 50px;
+	}	
 	#bio {
 		flex-direction: row;
 		justify-content: center;
