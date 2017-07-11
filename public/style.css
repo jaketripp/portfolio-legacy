@@ -87,7 +87,7 @@ p {
     text-decoration: none;
     border-radius: 50%;
     margin: 10px 5px;
-    width: 54px;
+    width: 52px;
 }
 
 .fa-facebook {
@@ -163,6 +163,12 @@ footer {
 	width: 100%;
 	background: #f0c060;
 	color: black;
+}
+
+@media only screen and (min-width: 450px) {
+	.fa {
+		width: 54px;
+	}
 }
 
 @media only screen and (min-width: 600px) {
