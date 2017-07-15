@@ -1,2 +1,2 @@
 # portfolio
-The code for my <a href="http://jaketripp.com" target="_blank">personal portfolio website</a>
+The code for my <a href="http://jaketripp.com">personal portfolio website</a>
