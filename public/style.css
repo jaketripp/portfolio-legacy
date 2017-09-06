@@ -69,7 +69,6 @@ p {
 
 .ui.cards>.card {
 	flex-grow: 1.0;
-	max-width: 500px;
 }
 
 /*.ui.cards>.card .button {
