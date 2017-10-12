@@ -68,7 +68,7 @@ p {
 
 #contactButton .ui.button {
 	background: #f0c060;
-	/*color: white;*/
+	font-size: 1.618rem;
 }
 
 .ui.cards {
