@@ -26,3 +26,15 @@ $('#up').click(function(e) {
     event.preventDefault();
 	$('html, body').animate({ scrollTop: 0 }, 'slow');
 });
+
+$('#context1 .menu .item')
+  .tab({
+    context: $('#context1')
+  })
+;
+$('#context2 .menu .item')
+  .tab({
+    // special keyword works same as above
+    context: 'parent'
+  })
+;
