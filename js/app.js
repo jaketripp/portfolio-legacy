@@ -17,13 +17,13 @@ $('#copy').on('click', function() {
 });
 
 $('#contactButton button').click(function(e) {
-    event.preventDefault();
+    e.preventDefault();
 	var target = $("#contact").offset().top;
 	$('html, body').animate({ scrollTop: target }, 'slow');
 });
 
 $('#up').click(function(e) {
-    event.preventDefault();
+    e.preventDefault();
 	$('html, body').animate({ scrollTop: 0 }, 'slow');
 });
 
