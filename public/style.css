@@ -182,6 +182,10 @@ p {
     color: #fff;
 }
 
+#up {
+	cursor: pointer;
+}
+
 footer {
 	text-align: center;
 	margin: 0px auto;
