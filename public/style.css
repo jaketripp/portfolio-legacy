@@ -90,18 +90,18 @@ p {
 }
 
 .ui.cards {
+	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin: 20px auto;
 }
 
 .ui.cards>.card {
-	flex-grow: 1.0;
+	flex: 1 0 calc(33.333% - 20px);
+	max-width: 400px;
+	min-width: 300px;
 }
 
-/*.ui.cards>.card .button {
-	margin: 5px;
-}
-*/
 .contactHalf {
 	display: block;
 }
