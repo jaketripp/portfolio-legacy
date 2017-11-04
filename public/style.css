@@ -80,7 +80,11 @@ p {
 	font-size: 2.618rem;
 }
 
-.ui.form > .field > label, .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=tel], .ui.form textarea, .ui.blue.button {
+.actions {
+	text-align: center;
+}
+
+.ui.form > .field > label, .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=tel], .ui.form textarea, .actions .ui.button {
 	font-size: 1.618rem;
 }
 

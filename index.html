@@ -55,28 +55,37 @@
 				<div class="description">
 					
 				<form class="ui form">
+
 					<div class="field">
 						<label>Name</label>
 						<input type="text" name="name" placeholder="Elon Musk">
 					</div>
+
 					<div class="field">
 						<label>Company</label>
 						<input type="text" name="company" placeholder="Tesla / SolarCity / SpaceX / OpenAI / Neuralink / Hyperloop / The Boring Company">
 					</div>
+
 					<div class="field">
 						<label>Email</label>
 						<input type="email" name="email" placeholder="space_s3x_71@gmail.com">
 					</div>
+
 					<div class="field">
 						<label>Phone</label>
 						<input type="tel" name="phone" placeholder="1-800-ELON-MUSK">
 					</div>
+
 					<div class="field">
 						<label>Message</label>
 						<textarea name="message" rows="4" maxlength="1000" placeholder="Hi Jake, I would like to hire you. I can tell that you would be a strong asset to have on my team. Please respond quickly, the future of the world is at stake."></textarea>
 					</div>
 
-					<div id="send"><button class="ui submit blue button">Send Message</button></div>
+					<div class="actions">
+						<div class="ui deny button">Cancel</div>
+						<button type="submit" class="ui blue submit button">Send Message</button>
+					</div>
+
 					<div class="ui error message"></div>
 				</form>
 					
