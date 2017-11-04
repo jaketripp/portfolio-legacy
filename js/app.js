@@ -18,8 +18,12 @@ $('#copy').on('click', function() {
 
 $('#contactButton button').click(function(e) {
 	e.preventDefault();
-	var target = $("#contact").offset().top;
-	$('html, body').animate({ scrollTop: target }, 'slow');
+	$('.ui.modal')
+		.modal({
+			blurring: true,
+			inverted: true
+		})
+		.modal('show');
 });
 
 $('#up').click(function(e) {

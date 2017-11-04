@@ -47,31 +47,44 @@
 
 		</div>
 
-		<form class="ui form">
-			<div class="field">
-				<label>Name</label>
-				<input type="text" name="name" placeholder="Elon Musk">
+		<div class="ui modal">
+			<i class="close icon"></i>
+			<div class="header">
+				Use the form below to send me an email
 			</div>
-			<div class="field">
-				<label>Company</label>
-				<input type="text" name="company" placeholder="Tesla / SolarCity / SpaceX / OpenAI / Neuralink / The Boring Company">
+			<div class="content">
+				<div class="description">
+					
+				<form class="ui form">
+					<div class="field">
+						<label>Name</label>
+						<input type="text" name="name" placeholder="Elon Musk">
+					</div>
+					<div class="field">
+						<label>Company</label>
+						<input type="text" name="company" placeholder="Tesla / SolarCity / SpaceX / OpenAI / Neuralink / The Boring Company">
+					</div>
+					<div class="field">
+						<label>Email</label>
+						<input type="email" name="email" placeholder="space_s3x_71@gmail.com">
+					</div>
+					<div class="field">
+						<label>Phone</label>
+						<input type="tel" name="phone" placeholder="1-800-ELON-MUSK">
+					</div>
+					<div class="field">
+						<label>Message</label>
+						<textarea name="message" rows="4" maxlength="1000" placeholder="Hello Jake, I would like to hire you. I can tell that you would be a strong asset to have on my team. Please respond quickly, the future of the world is at stake."></textarea>
+					</div>
+
+					<div class="ui submit button">Submit</div>
+					<div class="ui error message"></div>
+				</form>
+					
+				</div>
 			</div>
-			<div class="field">
-				<label>Email</label>
-				<input type="email" name="email" placeholder="space_s3x_71@gmail.com">
-			</div>
-			<div class="field">
-				<label>Phone</label>
-				<input type="tel" name="phone" placeholder="1-800-ELON-MUSK">
-			</div>
-			<div class="field">
-				<label>Message</label>
-				<textarea name="message" rows="4" maxlength="1000" placeholder="Hello Jake, I would like to hire you. I can tell that you would be a strong asset to have on my team. Please respond quickly, the future of the world is at stake."></textarea>
-			</div>
-			
-  			<div class="ui submit button">Submit</div>
-  			<div class="ui error message"></div>
-		</form>
+		</div>
+
 
 		<div id="context1">
 
@@ -339,8 +352,6 @@
 
 		</div>
 
-		<!-- 		<h2>Contact Info</h2>
- -->
 		<div id="contact">
 			<div class="contactHalf">
 				<a href="https://www.facebook.com/jacob.tripp.3" class="fa fa-facebook" target="_blank" title="Facebook"></a>
