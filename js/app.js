@@ -19,10 +19,6 @@ $('#copy').on('click', function() {
 $('#contactButton button').click(function(e) {
 	e.preventDefault();
 	$('.ui.modal')
-		.modal({
-			blurring: true,
-			inverted: true
-		})
 		.modal('show');
 });
 
@@ -81,7 +77,7 @@ $('.ui.form')
 				identifier: 'message',
 				rules: [{
 						type: 'empty',
-						prompt: "Please leave a brief message explaining what project you'd like to work together on" 
+						prompt: "Please leave a brief message explaining the project you would like to work together on" 
 				}]
 			}
 		}

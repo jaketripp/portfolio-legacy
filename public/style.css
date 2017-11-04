@@ -73,6 +73,15 @@ p {
 
 .ui.form #send {
 	text-align: center;
+	font-size: 1.618rem;
+}
+
+.ui.modal>.header:not(.ui) {
+	font-size: 2.618rem;
+}
+
+.ui.form > .field > label, .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=tel], .ui.form textarea, .ui.blue.button {
+	font-size: 1.618rem;
 }
 
 .ui.menu {
