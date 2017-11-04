@@ -82,6 +82,7 @@ p {
 
 .actions {
 	text-align: center;
+	margin-top: 30px;
 }
 
 .ui.form > .field > label, .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=tel], .ui.form textarea, .actions .ui.button {
