@@ -85,7 +85,7 @@ p {
 	margin-top: 30px;
 }
 
-.ui.form > .field > label, .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=tel], .ui.form textarea, .actions .ui.button {
+.ui.form > .field > label, .ui.form input[type=text], .ui.form input[type=email], .ui.form input[type=tel], .ui.form textarea, .actions .ui.button, .ui.error.message {
 	font-size: 1.618rem;
 }
 
