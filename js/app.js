@@ -96,3 +96,10 @@ $('.field').click(function(e){
 	var name = $(this).children('label')[0].innerText.toLowerCase();
 	$('[name="' + name + '"').focus();
 });
+
+$('.message .close')
+	.on('click', function() {
+		$(this)
+		  .closest('.message')
+		  .transition('fade');
+	});
