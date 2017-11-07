@@ -91,3 +91,8 @@ $('.ui.form .field').on('keydown', function(e) {
 		}
 	} 
 });
+
+$('.form label').click(function(e){
+	var name = $(this)[0].innerText.toLowerCase();
+	$('[name="' + name + '"').focus();
+});
