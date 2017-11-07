@@ -71,6 +71,10 @@ p {
 	font-size: 1.618rem;
 }
 
+#contactButton .ui.button:focus {
+	text-decoration: underline;
+}
+
 .ui.form #send {
 	text-align: center;
 	font-size: 1.618rem;

@@ -82,3 +82,12 @@ $('.ui.form')
 			}
 		}
 	});
+
+$('.ui.form .field').on('keydown', function(e) {
+	// mobile - have enter go to next
+	if (window.screen.width < 750) {
+		if (e.keyCode === 13){
+			$(this).next().focus();
+		}
+	} 
+});
