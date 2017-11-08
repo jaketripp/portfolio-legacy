@@ -26,13 +26,15 @@
 <body>
 
 	<div class="ui container">
-		<div class="ui positive message" style="display: none">
-			<i class="close icon"></i>
-			<div class="header">
-				Your email was sent successfully!
+		<!-- hidden by default, shown if email successfully sent -->
+		<div class='ui positive message' style="display: none">
+			<i class='close icon'></i>
+			<div class='header'>
+				Your email appears to have been sent successfully!
 			</div>
 			<p>I'll try to respond as soon as I can.</p>
 		</div>
+
 		<h1>Jake Tripp</h1>
 
 		<div id="bio">
@@ -61,7 +63,7 @@
 			<div class="content">
 				<div class="description">
 
-					<form class="ui form" method="post" action="mailer.php">
+					<form class="ui form" method="post" action="mailer.php" onsubmit="checkSuccess()">
 						<div class="field">
 							<label>Name</label>
 							<input type="text" name="name" placeholder="Elon Musk">

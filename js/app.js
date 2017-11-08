@@ -3,6 +3,7 @@ $('.special.cards .image').dimmer({
 	on: 'hover'
 });
 
+
 // copy to clipboard
 var clipboard = new Clipboard('#copy');
 
@@ -16,17 +17,20 @@ $('#copy').on('click', function() {
 	}, 1000);
 });
 
+// show modal
 $('#contactButton button').click(function(e) {
 	e.preventDefault();
 	$('.ui.modal')
 		.modal('show');
 });
 
+// scroll up
 $('#up').click(function(e) {
 	e.preventDefault();
 	$('html, body').animate({ scrollTop: 0 }, 'slow');
 });
 
+// tabs
 $('#context1 .menu .item')
 	.tab({
 		context: $('#context1')
@@ -37,8 +41,10 @@ $('#context2 .menu .item')
 		context: 'parent'
 	});
 
+// form validation
 $('.ui.form')
 	.form({
+		on: 'blur',
 		fields: {
 			name: {
 				identifier: 'name',
@@ -83,23 +89,48 @@ $('.ui.form')
 		}
 	});
 
-$('.ui.form .field').on('keydown', function(e) {
-	// mobile - have enter go to next
-	if (window.screen.width < 750) {
-		if (e.keyCode === 13){
-			$(this).next().focus();
-		}
-	} 
-});
-
+// focus even if label or div clicked?
 $('.field').click(function(e){
 	var name = $(this).children('label')[0].innerText.toLowerCase();
 	$('[name="' + name + '"').focus();
 });
 
-$('.message .close')
-	.on('click', function() {
-		$(this)
-		  .closest('.message')
-		  .transition('fade');
+
+// update localStorage
+$('.field > *').not('label').on('change', function(e){
+	var name = e.target.name;
+	var value = $('[name="' + name + '"')[0].value;
+	localStorage.setItem(name, value);
+});
+
+// be able to close success message
+$('.message .close').on('click', function() {
+	$(this).closest('.message').transition('fade');
+});
+
+// if no error message, make success true
+function checkSuccess(){
+	if ($('.error').length === 1) {
+		localStorage.setItem('success', 'true');
+	}
+}
+
+// if success is true
+// show success message and update localStorage
+if(localStorage.getItem('success') === 'true'){
+	$('.positive.message').css('display', 'block');
+	localStorage.removeItem('success');
+}
+
+// populate fields with localStorage
+function populateFields(){
+	var fields = $('.field > *').not('label');
+	$.each(fields, function(i){
+		var field = fields[i];
+		var name = field.name;
+		var value = localStorage.getItem(name) || '';
+		$('[name="' + name + '"]').val(value);
 	});
+}
+
+populateFields();
