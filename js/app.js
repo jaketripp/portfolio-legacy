@@ -69,14 +69,9 @@ $('.ui.form')
 			},
 			phone: {
 				identifier: 'phone',
-				rules: [
-				{
-					type: 'minLength[7]',
-					prompt: 'Please use a minimum of 7 numbers in your phone number'					
-				},
-				{
-					type: 'number',
-					prompt: 'Please use only numerical digits (0-9) in your phone number'
+				rules: [{
+					type: 'regExp[/^[0-9.()+\\- ]{10,15}$/]',
+					prompt: 'Please enter a valid phone number'
 				}]
 			},
 			message: {
