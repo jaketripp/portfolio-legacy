@@ -1,0 +1,20 @@
+
+
+
+#maybe a semantic cdn?
+#external anchors need rel="noopener"
+#make tab index be 0 on button?
+#html lang attribute
+#add alt tags to all images
+#use a jquery cdn instead
+#lazy load offscreen images
+#maybe use the blur thing that medium does?
+
+
+# MAYBE
+change fa icons to semantic icons and don't load in FA
+
+
+compress some of the images
+
+oesn't provide content if javascript not available?
