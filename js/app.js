@@ -24,11 +24,24 @@ $('#contactButton button').click(function(e) {
 		.modal('show');
 });
 
-// scroll up
+
+
+window.onscroll = function scrollFunction() {
+	if ($(window).height() * 3 < $(document).height()) {
+	    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+	        $('#up').css('display', 'block');
+	    } else {
+	        $('#up').css('display', 'none');
+	    }
+	}
+};
+
 $('#up').click(function(e) {
 	e.preventDefault();
-	$('html, body').animate({ scrollTop: 0 }, 'slow');
+	$('html, body').animate({ scrollTop: 0 }, 'fast');
 });
+
+
 
 // tabs
 $('#context1 .menu .item')
